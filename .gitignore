@@ -24,3 +24,9 @@ hs_err_pid*
 
 # IDE
 .idea
+
+# biniries
+out/
+
+# personal notes
+my_notes/
