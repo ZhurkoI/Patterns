@@ -11,4 +11,18 @@ public class MobilePhone {
     public void doAction(){
         state.doAction();
     }
+
+    public void acceptCall() {
+        if (state instanceof BlockedState) {
+            setState(new UnlockedState());
+        }
+        System.out.println("Accepting the call. Device is unlocked.");
+    }
+
+    public void finishCall() {
+        if (state instanceof UnlockedState) {
+            setState(new BlockedState());
+        }
+        System.out.println("Finishing the call. Device is locked.");
+    }
 }

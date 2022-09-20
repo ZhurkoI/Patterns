@@ -4,6 +4,6 @@ public class UnlockedState implements State {
 
     @Override
     public void doAction() {
-        System.out.println("Unlocked: Hello user!");
+        System.out.println("Interaction with unlocked device.");
     }
 }
