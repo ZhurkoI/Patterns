@@ -3,7 +3,7 @@ package org.example.structural.decorator;
 public class ApplicationRunner {
 
     public static void main(String[] args) {
-        String rawFood = "Meet";
+        String rawFood = "Meat";
 
         Food dish1 = new BaseFood(rawFood);
         dish1.makeFood();
